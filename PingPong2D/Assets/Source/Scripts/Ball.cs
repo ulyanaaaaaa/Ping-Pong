@@ -12,11 +12,7 @@ public class Ball : MonoBehaviour
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-    }
-
-    private void Start()
-    {
-        _direction = new Vector2(Random.Range(-1f,1f), Random.Range(-1f,1f));
+        _direction = new Vector2(Random.Range(0f,1f), Random.Range(-1f,1f));
     }
 
     private void Update()
@@ -29,11 +25,13 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Platform platform))
         {
             _direction.y = -_direction.y;
+            _direction.x += Random.Range(-0.5f, 0.5f);
         }
         
         if (collision.gameObject.TryGetComponent(out Block block))
         {
             _direction.y = -_direction.y;
+            _direction.x += Random.Range(-0.5f, 0.5f);
         }
 
         if (collision.gameObject.TryGetComponent(out Defence defence))

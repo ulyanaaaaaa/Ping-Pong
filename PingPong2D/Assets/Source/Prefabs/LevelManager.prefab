@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 539414397629455062}
-  - component: {fileID: 2084595165743419009}
-  - component: {fileID: 7580374298672819815}
+  - component: {fileID: 7854683539113447838}
+  - component: {fileID: 328240233460945462}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2084595165743419009
+--- !u!114 &7854683539113447838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,11 +42,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5504041549340484179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950e24a547b877643aa53da8c251caa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 92ab1afe12f52784c9f394b177d1cbc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Blocks: []
---- !u!114 &7580374298672819815
+--- !u!114 &328240233460945462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,6 +58,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cbb4e659e246b34194faf1254875b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _failTrigger: {fileID: 0}
-  _winPanel: {fileID: 0}
-  _failPanel: {fileID: 0}

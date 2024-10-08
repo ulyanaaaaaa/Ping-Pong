@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 909562345543557717}
   - component: {fileID: 2673156495671438581}
   - component: {fileID: 1026705944300027717}
-  - component: {fileID: 7750330401663083627}
+  - component: {fileID: 7376054012589901852}
   m_Layer: 5
   m_Name: FailWindow
   m_TagString: Untagged
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7750330401663083627
+--- !u!114 &7376054012589901852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3515573890363232226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a4dea7280a3414ebe96a03c48e2967, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e7578d2d9f6ca340aa60cbb004c263b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4080256977902935672
@@ -480,7 +480,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7750330401663083627}
+      - m_Target: {fileID: 7376054012589901852}
         m_TargetAssemblyTypeName: GameButtons, Assembly-CSharp
         m_MethodName: OnExit
         m_Mode: 1
@@ -613,7 +613,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7750330401663083627}
+      - m_Target: {fileID: 7376054012589901852}
         m_TargetAssemblyTypeName: GameButtons, Assembly-CSharp
         m_MethodName: OnRestart
         m_Mode: 1

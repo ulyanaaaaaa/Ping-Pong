@@ -793,11 +793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2996107312984167628, guid: c44f7735094372644ba22093fc883c91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.35
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 2996107312984167628, guid: c44f7735094372644ba22093fc883c91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.32
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 2996107312984167628, guid: c44f7735094372644ba22093fc883c91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -844,6 +844,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 328240233460945462, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+      propertyPath: _winPanel
+      value: 
+      objectReference: {fileID: 720068024}
+    - target: {fileID: 328240233460945462, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+      propertyPath: _failPanel
+      value: 
+      objectReference: {fileID: 1883990086}
+    - target: {fileID: 328240233460945462, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+      propertyPath: _failTrigger
+      value: 
+      objectReference: {fileID: 390016488}
     - target: {fileID: 539414397629455062, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5713425
@@ -932,7 +944,21 @@ PrefabInstance:
       propertyPath: _failTrigger
       value: 
       objectReference: {fileID: 390016488}
-    m_RemovedComponents: []
+    - target: {fileID: 7854683539113447838, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+      propertyPath: Blocks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7854683539113447838, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+      propertyPath: Blocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 1549958051}
+    - target: {fileID: 7854683539113447838, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+      propertyPath: Blocks.Array.data[1]
+      value: 
+      objectReference: {fileID: 2059154077}
+    m_RemovedComponents:
+    - {fileID: 7580374298672819815, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
+    - {fileID: 2084595165743419009, guid: 0235581fed0d8c94ca1ae0e8f59a6ff9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1213,7 +1239,8 @@ PrefabInstance:
       value: Defense
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5204531427484943835, guid: c954de1bc4cf4f441800533dc2f65947, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
