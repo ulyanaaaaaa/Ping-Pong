@@ -6,7 +6,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     private Rigidbody2D _rigidbody2D;
-    private float _speed = 15f;
+    public float _speed = 10f;
     private Vector2 _direction;
 
     private void Awake()
@@ -37,6 +37,12 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Defence defence))
         {
             _direction.x = -_direction.x;
+        
+        }
+        if (collision.gameObject.TryGetComponent(out Defence1 defence1))
+        {
+            _direction.y = -_direction.y;
+
         }
     }
 }

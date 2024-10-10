@@ -11,6 +11,7 @@ public class FailTrigger : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Ball ball))
         {
+
             OnFail?.Invoke();
         }
     }
