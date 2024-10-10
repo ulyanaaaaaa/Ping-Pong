@@ -58,3 +58,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cbb4e659e246b34194faf1254875b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _failTrigger: {fileID: 0}
+  _winPanel: {fileID: 0}
+  _failPanel: {fileID: 0}

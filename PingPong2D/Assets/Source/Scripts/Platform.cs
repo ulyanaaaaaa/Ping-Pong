@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public float speed = 10f; 
+    public float speed = 10f;
 
     private void Update()
     {
