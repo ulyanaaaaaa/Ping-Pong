@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 539414397629455062}
   - component: {fileID: 7854683539113447838}
   - component: {fileID: 328240233460945462}
+  - component: {fileID: 3506436927483454897}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -61,3 +62,15 @@ MonoBehaviour:
   _failTrigger: {fileID: 0}
   _winPanel: {fileID: 0}
   _failPanel: {fileID: 0}
+--- !u!114 &3506436927483454897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5504041549340484179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9029247b31804642b12490fcf291714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

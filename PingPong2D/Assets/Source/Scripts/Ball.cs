@@ -37,12 +37,10 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Defence defence))
         {
             _direction.x = -_direction.x;
-        
         }
         if (collision.gameObject.TryGetComponent(out Defence1 defence1))
         {
             _direction.y = -_direction.y;
-
         }
     }
 }
