@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+
 using UnityEngine;
 
 public class EnemyFactory : MonoBehaviour
@@ -8,8 +10,11 @@ public class EnemyFactory : MonoBehaviour
     private Coroutine _spawnTickY;
     [SerializeField] private FailTrigger _failTrigger;
     [SerializeField] private float _spawnTime;
+
     private Enemy _enemyPrefab;
     
+    
+
     private void Start()
     {
         _enemyPrefab = Resources.Load<Enemy>("Enemy");
@@ -36,6 +41,18 @@ public class EnemyFactory : MonoBehaviour
             yield return new WaitForSeconds(_spawnTime);
         }
     }
+    private void Update()
+    {
+        
+        
+            if (transform.position.x == -10)
+            {
+                
+                Destroy(gameObject);
+            }
+        
+    }
+
 
     private void OnDisable()
     {
