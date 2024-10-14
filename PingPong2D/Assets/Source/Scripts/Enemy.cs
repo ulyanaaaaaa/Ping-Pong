@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _speed;
     private FailTrigger _failTrigger;
     private bool _side;
-    public Action<Enemy> OnDestroy;
 
 
     public void Setup(bool side, FailTrigger failTrigger)
@@ -20,7 +19,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if(!_side)
+        if (!_side)
             transform.position += Vector3.left * _speed;
         else
             transform.position += Vector3.right * _speed;
@@ -33,5 +32,10 @@ public class Enemy : MonoBehaviour
         {
             _failTrigger.OnFail?.Invoke();
         }
+    }
+
+    private void OnMouseDown()
+    {
+        Destroy(gameObject);
     }
 }

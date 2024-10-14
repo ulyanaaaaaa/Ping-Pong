@@ -8,7 +8,7 @@ public class BlockManager : MonoBehaviour
     [field: SerializeField] private List<Block> Blocks = new List<Block>();
     public Action OnWin;
 
-    private void Awake()
+    private void Start()
     {
         foreach (Block block in Blocks)
         {
