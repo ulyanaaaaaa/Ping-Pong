@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+
 using UnityEngine;
 
 public class EnemyFactory : MonoBehaviour
@@ -9,7 +10,9 @@ public class EnemyFactory : MonoBehaviour
     private Coroutine _spawnTickY;
     [SerializeField] private FailTrigger _failTrigger;
     [SerializeField] private float _spawnTime;
+
     private Enemy _enemyPrefab;
+    
     
 
     private void Start()
@@ -49,9 +52,10 @@ public class EnemyFactory : MonoBehaviour
             }
         
     }
+
+
     private void OnDisable()
     {
-
         StopCoroutine(_spawnTickX);
         StopCoroutine(_spawnTickY);
     }

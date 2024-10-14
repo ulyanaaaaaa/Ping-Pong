@@ -1,5 +1,7 @@
+
 using System;
 using Unity.VisualScripting;
+
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -8,6 +10,7 @@ public class Enemy : MonoBehaviour
     private FailTrigger _failTrigger;
     private bool _side;
     public Action<Enemy> OnDestroy;
+
 
     public void Setup(bool side, FailTrigger failTrigger)
     {
@@ -22,6 +25,7 @@ public class Enemy : MonoBehaviour
         else
             transform.position += Vector3.right * _speed;
     }
+
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
