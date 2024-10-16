@@ -39,12 +39,12 @@ public class Ball : MonoBehaviour
             _direction.x += Random.Range(-0.5f, 0.5f);
         }
 
-        if (collision.gameObject.TryGetComponent(out Defence defence))
+        if (collision.gameObject.TryGetComponent(out DefenceX defence))
         {
             _direction.x = -_direction.x;
         }
 
-        if (collision.gameObject.TryGetComponent(out Defence1 defence1))
+        if (collision.gameObject.TryGetComponent(out DefenceY defence1))
         {
             _direction.y = -_direction.y;
         }
